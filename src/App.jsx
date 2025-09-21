@@ -84,12 +84,12 @@ export default function Portfolio() {
             >
               LinkedIn
             </a>
-            <a
+            {/* <a
               href="GITHUB_URL" // optional
               className="rounded-xl border border-neutral-700 hover:bg-neutral-800 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500"
             >
               GitHub
-            </a>
+            </a> */}
           </div>
           <div className="mt-4 text-sm text-neutral-400">
             Claremont, CA • 909-925-7235 • ucheoma.okoma@cgu.edu
