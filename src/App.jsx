@@ -95,7 +95,7 @@ export default function Portfolio() {
             Claremont, CA • 909-925-7235 • ucheoma.okoma@cgu.edu
           </div>
         </div>
-        <div className="flex justify-center md:justify-end">
+        {/* <div className="flex justify-center md:justify-end">
           <div className="size-40 md:size-48 rounded-2xl bg-neutral-800 border border-neutral-700 overflow-hidden">
             <img
               src="/headshot.jpg"             // file lives at: public/headshot.jpg
@@ -103,7 +103,7 @@ export default function Portfolio() {
               className="h-full w-full object-cover block"
             />
           </div>
-        </div>
+        </div> */}
       </section>
 
 
