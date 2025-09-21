@@ -51,7 +51,7 @@ export default function Portfolio() {
           </nav>
           <div className="flex items-center gap-3">
             <a
-              href="RESUME_URL" // replace with actual PDF link
+              href="ucheoma-okoma--resume.pdf" // replace with actual PDF link
               className="hidden sm:inline-flex rounded-xl bg-indigo-600 hover:bg-indigo-500 px-3 py-1.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500"
             >
               Download Resume
@@ -97,10 +97,11 @@ export default function Portfolio() {
         </div>
         <div className="flex justify-center md:justify-end">
           <div className="size-40 md:size-48 rounded-2xl bg-neutral-800 border border-neutral-700 overflow-hidden">
-            <img src="headshot.jpg" alt="Ucheoma Okoma headshot"></img>
-            <div className="h-full w-full grid place-items-center text-neutral-500 text-xs">
-              Headshot Placeholder
-            </div>
+            <img
+              src="/headshot.jpg"             // file lives at: public/headshot.jpg
+              alt="Ucheoma Okoma headshot"
+              className="h-full w-full object-cover block"
+            />
           </div>
         </div>
       </section>
