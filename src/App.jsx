@@ -205,7 +205,7 @@ export default function Portfolio() {
         <h2 className="text-2xl font-bold">Education</h2>
         <div className="mt-6 grid gap-4">
           <EduItem school="Claremont Graduate University – Claremont, CA" dates="Expected May 2027" degree="M.S. Information Systems & Technology (Cybersecurity & Health Informatics)" />
-          <EduItem school="Seneca College – Ontario, Canada" dates="Aug 2025" degree="Certificate – Cybersecurity & Threat Management (President’s Honour List)" />
+          <EduItem school="Seneca College – Ontario, Canada" dates="Aug 2025" degree="Postgraduate Certificate – Cybersecurity & Threat Management (President’s Honour List)" />
           <EduItem school="V.N. Karazin Kharkiv National University – Kharkiv, Ukraine" dates="Jul 2024" degree="Doctor of Medicine (MD)" />
         </div>
       </section>
