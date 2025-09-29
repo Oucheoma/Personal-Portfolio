@@ -190,7 +190,7 @@ export default function Portfolio() {
             location="Enugu, Nigeria"
             dates="Feb 2022 – Aug 2022"
             bullets={[
-              "Assisted in surgical procedures and ward rounds; supported care for 50+ patients daily.",
+              "Assisted in surgical procedures and ward rounds; supported care for 15+ patients daily.",
               "Maintained precise documentation, ensuring confidentiality and compliance standards.",
               "Delivered calm, solution-focused care in high-pressure scenarios.",
             ]}
