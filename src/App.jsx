@@ -6,6 +6,61 @@ import React, { useEffect, useState } from "react";
 // Accessibility: semantic landmarks, skip link, alt text, ARIA labels, focus styles.
 // SEO: meaningful headings, descriptive titles/description (set in your host framework's <head>).
 
+// Reusable YouTube player that auto-unmutes on user play
+function YouTubePlayer({ videoId, className = "" }) {
+  const containerRef = React.useRef(null);
+
+  React.useEffect(() => {
+    let player;
+
+    function onYouTubeIframeAPIReady() {
+      if (!containerRef.current) return;
+      player = new window.YT.Player(containerRef.current, {
+        videoId,
+        playerVars: {
+          // keep 16:9 responsive; we’re embedding inside a sized parent
+          rel: 0,
+          modestbranding: 1,
+          playsinline: 1,
+          mute: 1,            // start muted
+        },
+        events: {
+          onStateChange: (e) => {
+            // When user clicks play, unmute and set volume
+            if (e.data === window.YT.PlayerState.PLAYING) {
+              e.target.unMute();
+              e.target.setVolume(80); // tweak as you like
+            }
+          },
+        },
+      });
+    }
+
+    // Load the API once
+    if (!window.YT || !window.YT.Player) {
+      const tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      document.body.appendChild(tag);
+      // Preserve any existing handler
+      const prev = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = () => {
+        prev?.();
+        onYouTubeIframeAPIReady();
+      };
+    } else {
+      onYouTubeIframeAPIReady();
+    }
+
+    return () => {
+      // Optional cleanup
+      try { player?.destroy?.(); } catch {}
+    };
+  }, [videoId]);
+
+  return <div ref={containerRef} className={className} style={{ width: "100%", height: "100%" }} />;
+}
+
+
 export default function Portfolio() {
   // Dark mode toggle (persist to localStorage)
   const [theme, setTheme] = useState("dark");
@@ -158,14 +213,9 @@ export default function Portfolio() {
       🎥 Video Résumé — 2-Minute Intro
     </p>
     <div className="aspect-video w-full rounded-2xl overflow-hidden border border-neutral-800 shadow-lg max-w-md">
-      <iframe
-        className="w-full h-full"
-        src="https://www.youtube.com/embed/mTwO5FC7sR4?mute=1&playsinline=1&rel=0&modestbranding=1"
-        title="Ucheoma Okoma Video Résumé"
-        frameBorder="0"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      />
+      <div className="aspect-video w-full rounded-2xl overflow-hidden border border-neutral-800 shadow-lg max-w-md">
+        <YouTubePlayer videoId="mTwO5FC7sR4" className="w-full h-full" />
+      </div>
     </div>
   </div>
 </section>
@@ -176,14 +226,10 @@ export default function Portfolio() {
     🎥 Video Résumé — 2-Minute Intro
   </p>
   <div className="aspect-video rounded-2xl overflow-hidden border border-neutral-800 shadow-lg">
-    <iframe
-      className="w-full h-full"
-      src="https://www.youtube.com/embed/mTwO5FC7sR4?mute=1&playsinline=1&rel=0&modestbranding=1"
-      title="Ucheoma Okoma Video Résumé"
-      frameBorder="0"
-      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowFullScreen
-    />
+    <div className="aspect-video rounded-2xl overflow-hidden border border-neutral-800 shadow-lg">
+      <YouTubePlayer videoId="mTwO5FC7sR4" className="w-full h-full" />
+    </div>
+
   </div>
 </section>
 
