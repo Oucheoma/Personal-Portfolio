@@ -9,6 +9,8 @@ import React, { useEffect, useState } from "react";
 export default function Portfolio() {
   // Dark mode toggle (persist to localStorage)
   const [theme, setTheme] = useState("dark");
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   useEffect(() => {
     const stored = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
     const initial = stored || "dark";
@@ -176,7 +178,7 @@ export default function Portfolio() {
   <div className="aspect-video rounded-2xl overflow-hidden border border-neutral-800 shadow-lg">
     <iframe
       className="w-full h-full"
-      src="https://www.youtube.com/embed/VIDEO_ID?mute=1&playsinline=1&rel=0&modestbranding=1"
+      src="https://www.youtube.com/embed/mTwO5FC7sR4?mute=1&playsinline=1&rel=0&modestbranding=1"
       title="Ucheoma Okoma Video Résumé"
       frameBorder="0"
       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
