@@ -51,7 +51,7 @@ export default function Portfolio() {
           </nav>
           <div className="flex items-center gap-3">
             <a
-              href="ucheoma-okoma--resume.pdf" // replace with actual PDF link
+              href="Ucheoma_Okoma_Resume--.pdf" // replace with actual PDF link
               className="hidden sm:inline-flex rounded-xl bg-indigo-600 hover:bg-indigo-500 px-3 py-1.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500"
             >
               Download Resume
