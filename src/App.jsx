@@ -60,51 +60,79 @@ export default function Portfolio() {
           </div>
         </div>
       </header>
+{/* Hero / About */}
+<section
+  id="home"
+  className="mx-auto max-w-6xl px-4 py-16 grid grid-cols-1 md:grid-cols-[1.2fr_.8fr] gap-10 items-center"
+>
+  {/* Left: Text */}
+  <div>
+    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">Ucheoma Okoma</h1>
+    <p className="mt-2 text-indigo-300 font-medium">Cybersecurity + Health Informatics</p>
+    <p className="mt-4 text-neutral-300 max-w-prose">
+      Passionate Information Security professional focused on AI privacy, threat management,
+      and cloud/IoT security. Experienced across incident analysis, forensics, and secure
+      solution design with a strong foundation in standards like NIST CSF, ISO 27001, and
+      MITRE ATT&CK.
+    </p>
+    <div className="mt-6 flex flex-wrap gap-3">
+      <a
+        href="mailto:ucheoma.okoma@cgu.edu"
+        className="rounded-xl bg-indigo-600 hover:bg-indigo-500 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      >
+        Let’s Work Together
+      </a>
+      <a
+        href="https://www.linkedin.com/in/ucheoma-okoma"
+        className="rounded-xl border border-neutral-700 hover:bg-neutral-800 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      >
+        LinkedIn
+      </a>
+    </div>
+    <div className="mt-4 text-sm text-neutral-400">
+      Claremont, CA • 909-925-7235 • ucheoma.okoma@cgu.edu
+    </div>
+  </div>
 
-      {/* Hero / About */}
-      <section id="home" className="mx-auto max-w-6xl px-4 py-16 grid grid-cols-1 md:grid-cols-[1.2fr_.8fr] gap-10 items-center">
-        <div>
-          <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">
-            Ucheoma Okoma
-          </h1>
-          <p className="mt-2 text-indigo-300 font-medium">Cybersecurity + Health Informatics</p>
-          <p className="mt-4 text-neutral-300 max-w-prose">
-            Passionate Information Security professional focused on AI privacy, threat management, and cloud/IoT security. Experienced across incident analysis, forensics, and secure solution design with a strong foundation in standards like NIST CSF, ISO 27001, and MITRE ATT&CK.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="mailto:ucheoma.okoma@cgu.edu"
-              className="rounded-xl bg-indigo-600 hover:bg-indigo-500 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            >
-              Let’s Work Together
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ucheoma-okoma"
-              className="rounded-xl border border-neutral-700 hover:bg-neutral-800 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            >
-              LinkedIn
-            </a>
-            {/* <a
-              href="GITHUB_URL" // optional
-              className="rounded-xl border border-neutral-700 hover:bg-neutral-800 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            >
-              GitHub
-            </a> */}
-          </div>
-          <div className="mt-4 text-sm text-neutral-400">
-            Claremont, CA • 909-925-7235 • ucheoma.okoma@cgu.edu
-          </div>
-        </div>
-        {/* <div className="flex justify-center md:justify-end">
-          <div className="size-40 md:size-48 rounded-2xl bg-neutral-800 border border-neutral-700 overflow-hidden">
-            <img
-              src="/headshot.jpg"             // file lives at: public/headshot.jpg
-              alt="Ucheoma Okoma headshot"
-              className="h-full w-full object-cover block"
-            />
-          </div>
-        </div> */}
-      </section>
+  {/* Right: Video Résumé on large screens */}
+  <div className="hidden md:flex flex-col items-center">
+    <p className="text-sm text-neutral-400 mb-2 font-medium uppercase tracking-wide text-center">
+      🎥 Video Résumé — 2-Minute Intro
+    </p>
+    <div className="aspect-video w-full rounded-2xl overflow-hidden border border-neutral-800 shadow-lg max-w-md">
+      <video
+        className="w-full h-full object-cover"
+        controls
+        playsInline
+        preload="metadata"
+        poster="/video-resume-thumbnail.jpg"
+      >
+        <source src="/video-resume.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+{/* Mobile-only version before Projects */}
+<section id="video" className="md:hidden mx-auto max-w-6xl px-4 py-10">
+  <p className="text-sm text-neutral-400 mb-2 font-medium uppercase tracking-wide text-center">
+    🎥 Video Résumé — 2-Minute Intro
+  </p>
+  <div className="aspect-video rounded-2xl overflow-hidden border border-neutral-800 shadow-lg">
+    <video
+      className="w-full h-full object-cover"
+      controls
+      playsInline
+      preload="metadata"
+      poster="/video-resume-thumbnail.jpg"
+    >
+      <source src="/video-resume.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
 
 
       {/* Projects / Portfolio */}
