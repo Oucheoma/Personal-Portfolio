@@ -210,7 +210,7 @@ export default function Portfolio() {
   {/* Right: Video Résumé (desktop/laptop) */}
   <div className="hidden md:flex flex-col items-center">
     <p className="text-sm text-neutral-400 mb-2 font-medium uppercase tracking-wide text-center">
-      🎥 A Short Video Résumé 
+      🎥 Short Video Résumé 
     </p>
     <div className="aspect-video w-full rounded-2xl overflow-hidden border border-neutral-800 shadow-lg max-w-md">
       <div className="aspect-video w-full rounded-2xl overflow-hidden border border-neutral-800 shadow-lg max-w-md">
