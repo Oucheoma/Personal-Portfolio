@@ -190,7 +190,7 @@ export default function Portfolio() {
     </p>
     <div className="mt-6 flex flex-wrap gap-3">
       <a
-        href="mailto:ucheoma.okoma@cgu.edu"
+        href="mailto:okomaucheoma404@gmail.com"
         className="rounded-xl bg-indigo-600 hover:bg-indigo-500 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500"
       >
         Let’s Work Together
@@ -203,7 +203,7 @@ export default function Portfolio() {
       </a>
     </div>
     <div className="mt-4 text-sm text-neutral-400">
-      Claremont, CA • 909-925-7235 • ucheoma.okoma@cgu.edu
+      CA, USA • okomaucheoma404@gmail.com
     </div>
   </div>
 
@@ -368,7 +368,7 @@ export default function Portfolio() {
           <h2 className="text-2xl font-bold">Contact</h2>
           <p className="mt-2 text-neutral-300">I’m open to internships roles in cybersecurity and security engineering.</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="mailto:ucheoma.okoma@cgu.edu" className="rounded-xl bg-indigo-600 hover:bg-indigo-500 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500">Email Me</a>
+            <a href="mailto:okomaucheoma404@gmail.com" className="rounded-xl bg-indigo-600 hover:bg-indigo-500 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500">Email Me</a>
             <a href="https://www.linkedin.com/in/ucheoma-okoma" className="rounded-xl border border-neutral-700 hover:bg-neutral-800 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500">LinkedIn</a>
             
           </div>
