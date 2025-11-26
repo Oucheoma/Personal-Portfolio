@@ -239,6 +239,24 @@ export default function Portfolio() {
         <h2 className="text-2xl font-bold">Projects</h2>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
           <ProjectCard
+            title="Code Genealogy: Supply Chain Risk Visualizer"
+            stack="React, Node.js, ForceGraph3D, GitHub API, NPM Registry"
+            bullets={[
+              "Visual Risk Detection: Developed a 3D interactive graph to visualize dependency trees, identifying **Bus Factor** risks and abandoned libraries missed by standard vulnerability scanners.",
+              "Custom Health Algorithm: Engineered a **Vitality Score** algorithm that evaluates commit velocity, maintainer dominance, and community activity to flag single-point-of-failure risks.",
+              "Contextual Intelligence: Integrated Reddit and GitHub sentiment analysis to provide qualitative community feedback alongside quantitative risk data, enabling informed security decisions.",
+            ]}
+          />
+          <ProjectCard
+            title="Personal Finance Dashboard"
+            stack="React, Node.js, Chart.js, MongoDB"
+            bullets={[
+              "Interactive Data Visualization: Built a real-time financial dashboard using Chart.js to visualize spending trends, budget adherence, and category breakdowns for actionable insights.",
+              "Secure User Management: Implemented role-based access control (RBAC) and secure authentication to protect sensitive financial data and personalize the user experience.",
+              "Feature-Rich Management: Developed comprehensive CRUD functionality for transaction tracking and a custom **Coupon Finder** module to aggregate and display retailer discounts.",
+            ]}
+          />
+          <ProjectCard
             title="AI Privacy-Aware Chatbot"
             stack="Python, FastAPI, Tkinter, OpenRouter (Claude)"
             bullets={[
