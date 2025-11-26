@@ -242,8 +242,8 @@ export default function Portfolio() {
             title="Code Genealogy: Supply Chain Risk Visualizer"
             stack="React, Node.js, ForceGraph3D, GitHub API, NPM Registry"
             bullets={[
-              "Visual Risk Detection: Developed a 3D interactive graph to visualize dependency trees, identifying **Bus Factor** risks and abandoned libraries missed by standard vulnerability scanners.",
-              "Custom Health Algorithm: Engineered a **Vitality Score** algorithm that evaluates commit velocity, maintainer dominance, and community activity to flag single-point-of-failure risks.",
+              "Visual Risk Detection: Developed a 3D interactive graph to visualize dependency trees, identifying <i>Bus Factor</i> risks and abandoned libraries missed by standard vulnerability scanners.",
+              "Custom Health Algorithm: Engineered a <i>Vitality Score</i> algorithm that evaluates commit velocity, maintainer dominance, and community activity to flag single-point-of-failure risks.",
               "Contextual Intelligence: Integrated Reddit and GitHub sentiment analysis to provide qualitative community feedback alongside quantitative risk data, enabling informed security decisions.",
             ]}
           />
@@ -253,7 +253,7 @@ export default function Portfolio() {
             bullets={[
               "Interactive Data Visualization: Built a real-time financial dashboard using Chart.js to visualize spending trends, budget adherence, and category breakdowns for actionable insights.",
               "Secure User Management: Implemented role-based access control (RBAC) and secure authentication to protect sensitive financial data and personalize the user experience.",
-              "Feature-Rich Management: Developed comprehensive CRUD functionality for transaction tracking and a custom **Coupon Finder** module to aggregate and display retailer discounts.",
+              "Feature-Rich Management: Developed comprehensive CRUD functionality for transaction tracking and a custom <i>Coupon Finder<i/> module to aggregate and display retailer discounts.",
             ]}
           />
           <ProjectCard
