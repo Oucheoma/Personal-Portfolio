@@ -221,7 +221,7 @@ export default function Portfolio() {
 </section>
 
 {/* ====== Mobile video placement (before Projects on small screens) ====== */}
-<section id="video" className="md:hidden mx-auto max-w-6xl px-4 py-10">
+{/* <section id="video" className="md:hidden mx-auto max-w-6xl px-4 py-10">
   <p className="text-sm text-neutral-400 mb-2 font-medium uppercase tracking-wide text-center">
     🎥 Video Résumé — 2-Minute Intro
   </p>
@@ -231,7 +231,7 @@ export default function Portfolio() {
     </div>
 
   </div>
-</section>
+</section> */}
 
 
       {/* Projects / Portfolio */}
