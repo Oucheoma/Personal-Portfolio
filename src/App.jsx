@@ -7,58 +7,58 @@ import React, { useEffect, useState } from "react";
 // SEO: meaningful headings, descriptive titles/description (set in your host framework's <head>).
 
 // Reusable YouTube player that auto-unmutes on user play
-function YouTubePlayer({ videoId, className = "" }) {
-  const containerRef = React.useRef(null);
+// function YouTubePlayer({ videoId, className = "" }) {
+//   const containerRef = React.useRef(null);
 
-  React.useEffect(() => {
-    let player;
+//   React.useEffect(() => {
+//     let player;
 
-    function onYouTubeIframeAPIReady() {
-      if (!containerRef.current) return;
-      player = new window.YT.Player(containerRef.current, {
-        videoId,
-        playerVars: {
-          // keep 16:9 responsive; we’re embedding inside a sized parent
-          rel: 0,
-          modestbranding: 1,
-          playsinline: 1,
-          mute: 1,            // start muted
-        },
-        events: {
-          onStateChange: (e) => {
-            // When user clicks play, unmute and set volume
-            if (e.data === window.YT.PlayerState.PLAYING) {
-              e.target.unMute();
-              e.target.setVolume(80); // tweak as you like
-            }
-          },
-        },
-      });
-    }
+//     function onYouTubeIframeAPIReady() {
+//       if (!containerRef.current) return;
+//       player = new window.YT.Player(containerRef.current, {
+//         videoId,
+//         playerVars: {
+//           // keep 16:9 responsive; we’re embedding inside a sized parent
+//           rel: 0,
+//           modestbranding: 1,
+//           playsinline: 1,
+//           mute: 1,            // start muted
+//         },
+//         events: {
+//           onStateChange: (e) => {
+//             // When user clicks play, unmute and set volume
+//             if (e.data === window.YT.PlayerState.PLAYING) {
+//               e.target.unMute();
+//               e.target.setVolume(80); // tweak as you like
+//             }
+//           },
+//         },
+//       });
+//     }
 
-    // Load the API once
-    if (!window.YT || !window.YT.Player) {
-      const tag = document.createElement("script");
-      tag.src = "https://www.youtube.com/iframe_api";
-      document.body.appendChild(tag);
-      // Preserve any existing handler
-      const prev = window.onYouTubeIframeAPIReady;
-      window.onYouTubeIframeAPIReady = () => {
-        prev?.();
-        onYouTubeIframeAPIReady();
-      };
-    } else {
-      onYouTubeIframeAPIReady();
-    }
+//     // Load the API once
+//     if (!window.YT || !window.YT.Player) {
+//       const tag = document.createElement("script");
+//       tag.src = "https://www.youtube.com/iframe_api";
+//       document.body.appendChild(tag);
+//       // Preserve any existing handler
+//       const prev = window.onYouTubeIframeAPIReady;
+//       window.onYouTubeIframeAPIReady = () => {
+//         prev?.();
+//         onYouTubeIframeAPIReady();
+//       };
+//     } else {
+//       onYouTubeIframeAPIReady();
+//     }
 
-    return () => {
-      // Optional cleanup
-      try { player?.destroy?.(); } catch {}
-    };
-  }, [videoId]);
+//     return () => {
+//       // Optional cleanup
+//       try { player?.destroy?.(); } catch {}
+//     };
+//   }, [videoId]);
 
-  return <div ref={containerRef} className={className} style={{ width: "100%", height: "100%" }} />;
-}
+//   return <div ref={containerRef} className={className} style={{ width: "100%", height: "100%" }} />;
+// }
 
 
 export default function Portfolio() {
@@ -208,7 +208,7 @@ export default function Portfolio() {
   </div>
 
   {/* Right: Video Résumé (desktop/laptop) */}
-  <div className="hidden md:flex flex-col items-center">
+  {/* <div className="hidden md:flex flex-col items-center">
     <p className="text-sm text-neutral-400 mb-2 font-medium uppercase tracking-wide text-center">
       🎥 Short Video Résumé 
     </p>
@@ -218,7 +218,7 @@ export default function Portfolio() {
       </div>
     </div>
   </div>
-</section>
+</section> */}
 
 {/* ====== Mobile video placement (before Projects on small screens) ====== */}
 {/* <section id="video" className="md:hidden mx-auto max-w-6xl px-4 py-10">
