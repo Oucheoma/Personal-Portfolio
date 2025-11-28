@@ -217,8 +217,8 @@ export default function Portfolio() {
         <YouTubePlayer videoId="mTwO5FC7sR4" className="w-full h-full" />
       </div>
     </div>
-  </div>
-</section> */}
+  </div> */}
+</section>
 
 {/* ====== Mobile video placement (before Projects on small screens) ====== */}
 {/* <section id="video" className="md:hidden mx-auto max-w-6xl px-4 py-10">
