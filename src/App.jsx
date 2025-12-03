@@ -201,6 +201,12 @@ export default function Portfolio() {
       >
         LinkedIn
       </a>
+            <a
+        href="https://medium.com/@ucheomaokoma_"
+        className="rounded-xl border border-neutral-700 hover:bg-neutral-800 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      >
+        Medium
+      </a>
     </div>
     <div className="mt-4 text-sm text-neutral-400">
       CA, USA • okomaucheoma404@gmail.com
@@ -388,7 +394,7 @@ export default function Portfolio() {
           <div className="mt-6 flex flex-wrap gap-3">
             <a href="mailto:okomaucheoma404@gmail.com" className="rounded-xl bg-indigo-600 hover:bg-indigo-500 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500">Email Me</a>
             <a href="https://www.linkedin.com/in/ucheoma-okoma" className="rounded-xl border border-neutral-700 hover:bg-neutral-800 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500">LinkedIn</a>
-            
+            <a href="https://medium.com/@ucheomaokoma_" className="rounded-xl border border-neutral-700 hover:bg-neutral-800 px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500">Medium</a>
           </div>
         </div>
         <footer className="mt-8 text-xs text-neutral-500">© {new Date().getFullYear()} Ucheoma Okoma</footer>
