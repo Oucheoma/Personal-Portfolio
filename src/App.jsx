@@ -182,7 +182,7 @@ export default function Portfolio() {
   {/* Left: intro text */}
   <div>
     <h1 className="text-3xl md:text-4xl font-extrabold leading-tight">Ucheoma Okoma</h1>
-    <p className="mt-2 text-indigo-300 font-medium">Cybersecurity + Health Informatics</p>
+    <p className="mt-2 text-indigo-300 font-medium">Cybersecurity</p>
     <p className="mt-4 text-neutral-300 max-w-prose">
       Passionate Information Security professional focused on AI privacy, threat management, and
       cloud/IoT security. Experienced across incident analysis, forensics, and secure solution design with a
