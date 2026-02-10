@@ -244,7 +244,7 @@ export default function Portfolio() {
       <section id="projects" className="mx-auto max-w-6xl px-4 py-12">
         <h2 className="text-2xl font-bold">Projects</h2>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
-          <ProjectCard
+          {/* <ProjectCard
             title="Code Genealogy: Supply Chain Risk Visualizer"
             stack="React, Node.js, ForceGraph3D, GitHub API, NPM Registry"
             bullets={[
@@ -261,7 +261,7 @@ export default function Portfolio() {
               "Secure User Management: Implemented role-based access control (RBAC) and secure authentication to protect sensitive financial data and personalize the user experience.",
               "Feature-Rich Management: Developed comprehensive CRUD functionality for transaction tracking and a custom Coupon Finder module to aggregate and display retailer discounts.",
             ]}
-          />
+          /> */}
           <ProjectCard
             title="AI Privacy-Aware Chatbot"
             stack="Python, FastAPI, Tkinter, OpenRouter (Claude)"
